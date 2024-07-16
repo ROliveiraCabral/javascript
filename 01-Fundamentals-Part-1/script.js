@@ -1,6 +1,9 @@
-//let js = "amazing";
+// 1 - fundamentos
+
+let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
+// 2- data tyoes
 console.log("Jonas");
 console.log(23);
 
@@ -21,3 +24,13 @@ console.log("print typeof num = " + typeof num);
 javaScriptIsFun = "yes";
 console.log("print javascriptIsFun variable now = " + javaScriptIsFun);
 console.log("print typeof javaScriptIsFun = " + typeof javaScriptIsFun);
+
+// 3 - let, const e var
+let age = 31;
+age = 30;
+
+const birthYear = 1983;
+//birthYear = 1984;
+
+var job = "developer";
+job = "teacher";
