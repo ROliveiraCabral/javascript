@@ -3,7 +3,7 @@
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
-// 2- data tyoes
+// 2 - data tyoes
 console.log("Jonas");
 console.log(23);
 
@@ -34,3 +34,39 @@ const birthYear = 1983;
 
 var job = "developer";
 job = "teacher";
+
+// 4 - Basic Operators
+const now = 2037;
+const ageRodrigo = now - 1983;
+const agePatricia = now - 1979;
+console.log(ageRodrigo, agePatricia);
+console.log(ageRodrigo * 2, ageRodrigo / 10, 2 ** 3);
+
+const myFirstName = "Rodrigo";
+const myLastName = "Cabral";
+console.log(myFirstName + " " + myLastName);
+
+let x = 10 + 5;
+console.log(x);
+x += 10;
+console.log(x);
+x *= 4;
+console.log(x);
+x /= 10;
+console.log(x);
+x++;
+console.log(x);
+x--;
+x--;
+console.log(x);
+
+console.log(ageRodrigo > agePatricia);
+console.log(ageRodrigo <= agePatricia);
+
+const isFullAge = agePatricia >= 18;
+console.log(isFullAge);
+
+//look operator precedence mdn
+let z, y;
+z = y = 25 - 10 - 5;
+console.log(z, y);
