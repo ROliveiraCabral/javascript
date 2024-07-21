@@ -70,3 +70,30 @@ console.log(isFullAge);
 let z, y;
 z = y = 25 - 10 - 5;
 console.log(z, y);
+
+const personName = "João";
+const ativity = "student";
+const birth = 2016;
+const year = 2024;
+
+const joao =
+  "I'm " +
+  personName +
+  ", I'm a " +
+  ativity +
+  " and I'm " +
+  (year - birth) +
+  " years old.";
+
+console.log(joao);
+
+// template literals
+const newJoao = `I'm ${personName}, I'm a ${ativity} and I'm ${
+  year - birth
+} years old.`;
+console.log(newJoao);
+
+//writing multyple lines with template literals
+console.log(`String with
+multiple
+lines`);
