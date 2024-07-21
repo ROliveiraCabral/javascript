@@ -3,7 +3,7 @@
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
-// 2 - data tyoes
+// data tyoes
 console.log("Jonas");
 console.log(23);
 
@@ -25,7 +25,7 @@ javaScriptIsFun = "yes";
 console.log("print javascriptIsFun variable now = " + javaScriptIsFun);
 console.log("print typeof javaScriptIsFun = " + typeof javaScriptIsFun);
 
-// 3 - let, const e var
+// let, const e var
 let age = 31;
 age = 30;
 
@@ -35,7 +35,7 @@ const birthYear = 1983;
 var job = "developer";
 job = "teacher";
 
-// 4 - Basic Operators
+// Basic Operators
 const now = 2037;
 const ageRodrigo = now - 1983;
 const agePatricia = now - 1979;
@@ -97,3 +97,14 @@ console.log(newJoao);
 console.log(`String with
 multiple
 lines`);
+
+//Taking decision (if/else)
+const personAge = 11;
+if (personAge >= 18) {
+  console.log("Valentina can start driving license");
+} else {
+  const yearsLeft = 18 - personAge;
+  console.log(
+    `sorry Valentina, you are too young! wait another ${yearsLeft} years`
+  );
+}
