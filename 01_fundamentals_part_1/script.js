@@ -108,3 +108,35 @@ if (personAge >= 18) {
     `sorry Valentina, you are too young! wait another ${yearsLeft} years`
   );
 }
+
+//Strings and template literals
+const myName = "Rodrigo";
+const myJob = "developer";
+const myBirthYear = 1983;
+const futureYear = 2037;
+
+const rodrigo =
+  "I'm " +
+  myName +
+  ", a " +
+  (futureYear - myBirthYear) +
+  " years old" +
+  ", " +
+  myJob +
+  "!";
+console.log(rodrigo);
+
+const rodrigoNew = `I'm ${myName}, a ${
+  futureYear - myBirthYear
+} years old, ${myJob}!`;
+console.log(rodrigoNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`Strings with \n\
+  multiple\n\
+  lines`);
+
+console.log(`Strings with
+    multiple
+    lines`);
