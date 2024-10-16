@@ -140,3 +140,19 @@ console.log(`Strings with \n\
 console.log(`Strings with
     multiple
     lines`);
+
+//operador ternário
+const licenseAge = 19;
+const yearsLicense = 18 - licenseAge;
+
+licenseAge >= 18
+  ? console.log("Sarah can start driving license")
+  : console.log(
+      `sorry Sarah, you are too young! wait another ${yearsLicense} years`
+    );
+
+const dateYear = 2012;
+let century;
+
+dateYear <= 2000 ? (century = 20) : (century = 21);
+console.log(`século: ${century}`);
