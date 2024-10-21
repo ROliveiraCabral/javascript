@@ -208,4 +208,19 @@ const favorite = Number(prompt("What's your favorite number?")); // With Number(
 console.log(favorite);
 console.log(typeof favorite);
 
-if (favorite === 23) console.log("cool! 23 is an amazing number."); // 23 === 23 else '23 == 23
+if (favorite === 23) console.log("cool! 23 is an amazing number."); // 23 === 23 else '23' == 23
+
+//Boolean and Logical Operators
+const hasDriversLicense = true;
+const hasGoodVisions = true;
+
+console.log(hasDriversLicense && hasGoodVisions);
+console.log(hasDriversLicense || hasGoodVisions);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVisions;
+if (shouldDrive) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
