@@ -72,3 +72,37 @@ const yearUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearUntilRetirement(1983, "Rodrigo Cabral"));
 console.log(yearUntilRetirement(1979, "Patrícia Ally"));
+
+//Introduction to Arrays
+const friend1 = "Walace";
+const friend2 = "Leonardo";
+const friend3 = "Leandro";
+
+const friends = ["Walace", "Leonardo", "Leandro"];
+console.log(friends);
+
+const years = new Array(1991, 1983, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+friends[2] = "Maurício";
+console.log(friends);
+
+const firstName = "Rodrigo";
+
+const rodrigo = [firstName, "Cabral", 2024 - 1983, "Developer", friends];
+console.log(rodrigo);
+
+console.log(calcAge1(years[0])); //operações com array
+console.log(calcAge1(years[1])); //operações com array
+console.log(calcAge1(years[years.length - 1])); //operações com array
+
+const ages = [
+  calcAge1(years[0]),
+  calcAge1(years[1]),
+  calcAge1(years[years.length - 1]),
+];
+
+console.log(ages);
