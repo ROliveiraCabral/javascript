@@ -106,3 +106,37 @@ const ages = [
 ];
 
 console.log(ages);
+
+//Basic Array Operations
+
+//add elements
+const family = ["Patricia", "Valentina", "João"];
+const newLength = family.push("Vitória");
+console.log(family);
+console.log(newLength);
+
+family.unshift("Rodrigo");
+console.log(family);
+
+//remove elements
+family.pop(); //last element
+const popped = family.pop();
+console.log(family);
+console.log(popped);
+
+family.shift();
+console.log(family);
+
+console.log(family.indexOf("Patricia"));
+console.log(family.indexOf("Gisele")); // -1 => elemento não encontrado
+
+console.log(family.includes("Valentina"));
+console.log(family.includes("André"));
+
+family.push(23);
+console.log(family.includes("23")); //strict equality
+console.log(family.includes(23));
+
+if (family.includes(23)) {
+  console.log("We have a number in our family!");
+}
