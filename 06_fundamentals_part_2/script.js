@@ -140,3 +140,41 @@ console.log(family.includes(23));
 if (family.includes(23)) {
   console.log("We have a number in our family!");
 }
+
+//Introduction to objects
+const joao = {
+  nome: "João",
+  sobrenome: "Ally",
+  idade: 2024 - 2016,
+  profissao: "estudante",
+  amigos: ["Calebe", "Isaque", "Pedro"],
+};
+
+console.log(joao);
+console.log(joao.sobrenome);
+console.log(joao["sobrenome"]);
+
+const nomeKey = "nome";
+console.log(joao[nomeKey]);
+console.log(joao["sobre" + nomeKey]);
+
+const interestIn = prompt(
+  "What do you want to know about Joao? Choose between nome, sobrenome, idade, profissão, amigos"
+);
+
+if (joao[interestIn]) {
+  console.log(joao[interestIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between nome, sobrenome, idade, profissão, amigos"
+  );
+}
+
+joao.localizacao = "Brasil";
+joao["twitter"] = "@joaoally";
+
+console.log(joao);
+
+console.log(
+  `${joao.nome} has ${joao.amigos.length} friends, and his best friend is called ${joao.amigos[0]}`
+);
