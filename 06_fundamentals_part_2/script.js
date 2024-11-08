@@ -178,3 +178,31 @@ console.log(joao);
 console.log(
   `${joao.nome} has ${joao.amigos.length} friends, and his best friend is called ${joao.amigos[0]}`
 );
+
+//object methods
+
+const jonas = {
+  fistName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michel", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSumary: function () {
+    return `Jonas is ${this.age} years old, is a ${this.job} and he ${
+      this.hasDriversLicense ? "has" : "hasn't"
+    } a driver's license.`;
+  },
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas["age"]);
+
+console.log(jonas.getSumary());
