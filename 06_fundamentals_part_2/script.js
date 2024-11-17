@@ -206,3 +206,65 @@ console.log(jonas.age);
 console.log(jonas["age"]);
 
 console.log(jonas.getSumary());
+
+//Iteration - The for loop
+for (let i = 1; i <= 10; i++) {
+  console.log(`Lifting weights repetition ${i}`);
+}
+
+const elenaArray = [
+  "Helena",
+  "Melo",
+  2024 - 1953,
+  "Retired",
+  ["Zilda", "Carlos", "Sebastião"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < elenaArray.length; i++) {
+  console.log(elenaArray[i], typeof elenaArray[i]);
+
+  //types[i] = typeof elenaArray[i];
+  types.push(typeof elenaArray[i]);
+}
+
+console.log(types);
+
+const fechas = [1991, 2007, 1969, 2020];
+const calcFechas = [];
+
+for (let i = 0; i < fechas.length; i++) {
+  calcFechas.push(2037 - fechas[i]);
+}
+
+console.log(calcFechas);
+
+//continue and break
+console.log("----------ONLY STRINGS----------");
+for (let i = 0; i < elenaArray.length; i++) {
+  if (typeof elenaArray[i] !== "string") continue;
+  console.log(elenaArray[i], typeof elenaArray[i]);
+}
+
+console.log("----------BREAK WITH NUMBER----------");
+for (let i = 0; i < elenaArray.length; i++) {
+  if (typeof elenaArray[i] === "number") break;
+  console.log(elenaArray[i], typeof elenaArray[i]);
+}
+
+//looping backwards and loops in loops
+console.log("--------------------");
+for (let i = elenaArray.length - 1; i >= 0; i--) {
+  console.log(elenaArray[i]);
+}
+
+console.log("--------------------");
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`----------starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+  }
+}
